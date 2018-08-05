@@ -14,10 +14,9 @@
 
     <div class="container mt-5">
 
-        <h2 class="text-center mr-auto ml-auto">Thanks for visiting Kings Cross Station in London! The Current time is:
+        <h2 class="text-center mr-auto ml-auto">Thanks for visiting Kings Cross Station in London! 
             <br>
-            
-        <span id="currentime"></span>.</h2>
+            The Current time is: <span id="currentime"></span></h2>
 
         <table class="table table-striped mt-3 table-hover" id="traintable">
                 <thead>
@@ -58,7 +57,7 @@
                     <tr id="row4">
                         <th scope="row" id="rail3">Heathrow Connect</th>
                         <td class="text-center" id="route3">LON->HEATH</td>
-                        <td class="text-center" id="frequency3">5</td>
+                        <td class="text-center" id="frequency3">8</td>
                         <td class="text-center" id="lastrain3"></td>
                         <td class="text-center" id="nextrain3"></td>
                         <td class="text-center" id="timeuntil3"></td>
@@ -207,16 +206,22 @@ for (i=0; i<(traintable[0].childElementCount - 1); i++) {
     $("#timeuntil" + i).text(timeuntil + " min.");
     var nextdepart = moment().add(timeuntil, "minutes");
     $("#nextrain" + i).text(moment(nextdepart).format("HH:mm")); 
+    if (10 < timeuntil < 60) {
+        ($("#row" + (i + 1))).removeClass("table-warning table-danger table-success");
+
+    }
 
     if (timeuntil <= 5) {
-    ($("#row" + (i + 1))).addClass("table-danger");
+    ($("#row" + (i + 1))).removeClass("table-warning").addClass("table-danger");
 
     }
 
     if (timeuntil <= 10) {
-        ($("#row" + (i + 1))).addClass("table-warning");
+        ($("#row" + (i + 1))).removeClass("table-danger").addClass("table-warning");
         
     }
+
+
 
     if (timeuntil >= 60) {
     ($("#row" + (i + 1))).addClass("table-success");
@@ -286,8 +291,13 @@ for (i=0; i<(traintable[0].childElementCount - 1); i++) {
     var nextdepart = moment().add(timeuntil, "minutes");
     $("#nextrain" + i).text(moment(nextdepart).format("HH:mm")); 
 
+    if (10 < timeuntil < 60) {
+        ($("#row" + (i + 1))).removeClass("table-warning table-danger table-success");
+
+    }
+
     if (timeuntil <= 5) {
-    ($("#row" + (i + 1))).addClass("table-danger");
+    ($("#row" + (i + 1))).removeClass("table-warning").addClass("table-danger");
 
     }
 
@@ -305,7 +315,7 @@ for (i=0; i<(traintable[0].childElementCount - 1); i++) {
 }
 
 
-    }, 10000);
+    }, 3000);
 
 
 
