@@ -14,13 +14,13 @@
 
     <div class="container mt-5">
 
-        <h2 class="text-center mr-auto ml-auto">Thanks for visiting Kings Cross Station in London! 
+        <h2 class="text-center mr-auto ml-auto">Thanks for visiting "Get OutKast" Atlanta's Finest Rail Station! 
             <br>
             The Current time is: <span id="currentime"></span></h2>
 
         <table class="table table-striped mt-3 table-hover" id="traintable">
                 <thead>
-                  <tr id="row0">
+                  <tr id="rowheader">
                     <th class="text-center" scope="col">Line:</th>
                     <th class="text-center" scope="col">Route:</th>
                     <th class="text-center" scope="col">Frequency: (min.)</th>
@@ -30,118 +30,134 @@
                   </tr>
                 </thead>
                 <tbody class="text-center" id="trainbody">
-                    <tr id="row1">
-                        <th scope="row" id="rail0">LondonRail</th>
-                        <td class="text-center" id="route0">LON->LIVR</td>
+                    <tr id="row0">
+                        <th scope="row" id="rail0">ATLRail</th>
+                        <td class="text-center" id="route0">ATL->ATHS</td>
                         <td class="text-center" id="frequency0">60</td>
                         <td class="text-center" id="lastrain0"></td>
                         <td class="text-center" id="nextrain0"></td>
                         <td class="text-center" id="timeuntil0"></td>
                     </tr>
-                    <tr id="row2">
-                        <th scope="row" id="rail1">LondonRail</th>
-                        <td class="text-center" id="route1">LON->MANC</td>
+                    <tr id="row1">
+                        <th scope="row" id="rail1">ATLRail</th>
+                        <td class="text-center" id="route1">ATL->CHAR</td>
                         <td class="text-center" id="frequency1">45</td>
                         <td class="text-center" id="lastrain1"></td>
                         <td class="text-center" id="nextrain1"></td>
                         <td class="text-center" id="timeuntil1"></td>
                     </tr>
-                    <tr id="row3">
-                        <th scope="row" id="rail2">LondonRail</th>
-                        <td class="text-center" id="route2">LON->LEED</td>
+                    <tr id="row2">
+                        <th scope="row" id="rail2">ATLRail</th>
+                        <td class="text-center" id="route2">ATL->GRNV</td>
                         <td class="text-center" id="frequency2">75</td>
                         <td class="text-center" id="lastrain2"></td>
                         <td class="text-center" id="nextrain2"></td>
                         <td class="text-center" id="timeuntil2"></td>
                     </tr>
-                    <tr id="row4">
-                        <th scope="row" id="rail3">Heathrow Connect</th>
-                        <td class="text-center" id="route3">LON->HEATH</td>
+                    <tr id="row3">
+                        <th scope="row" id="rail3">Hartsfield-Jackson Connect</th>
+                        <td class="text-center" id="route3">ATL->HART</td>
                         <td class="text-center" id="frequency3">8</td>
                         <td class="text-center" id="lastrain3"></td>
                         <td class="text-center" id="nextrain3"></td>
                         <td class="text-center" id="timeuntil3"></td>
                     </tr>
-                    <tr id="row5">
-                        <th scope="row" id="rail4">British Rail</th>
-                        <td class="text-center" id="route4">LON->CAMB</td>
+                    <tr id="row4">
+                        <th scope="row" id="rail4">Southeastern Lines</th>
+                        <td class="text-center" id="route4">ATL->SAVA</td>
                         <td class="text-center" id="frequency4">20</td>
                         <td class="text-center" id="lastrain4"></td>
                         <td class="text-center" id="nextrain4"></td>
                         <td class="text-center" id="timeuntil4"></td>
                     </tr>
-                    <tr id="row6">
-                        <th scope="row" id="rail5">British Rail</th>
-                        <td class="text-center" id="route5">LON->OXFD</td>
+                    <tr id="row5">
+                        <th scope="row" id="rail5">Southeastern Lines</th>
+                        <td class="text-center" id="route5">ATL->BIRM</td>
                         <td class="text-center" id="frequency5">15</td>
                         <td class="text-center" id="lastrain5"></td>
                         <td class="text-center" id="nextrain5"></td>
                         <td class="text-center" id="timeuntil5"></td>
                     </tr>
-                    <tr id="row7">
-                        <th scope="row" id="rail6">Arriva Wales</th>
-                        <td class="text-center" id="route6">LON->BRIS</td>
+                    <tr id="row6">
+                        <th scope="row" id="rail6">Texas Comets</th>
+                        <td class="text-center" id="route6">ATL->DALL</td>
                         <td class="text-center" id="frequency6">90</td>
                         <td class="text-center" id="lastrain6"></td>
                         <td class="text-center" id="nextrain6"></td>
                         <td class="text-center" id="timeuntil6"></td>
                     </tr>
-                    <tr id="row8">
-                        <th scope="row" id="rail7">Arriva Wales</th>
-                        <td class="text-center" id="route7">LON->SWA</td>
+                    <tr id="row7">
+                        <th scope="row" id="rail7">Texas Comets</th>
+                        <td class="text-center" id="route7">ATL->HOUS</td>
                         <td class="text-center" id="frequency7">120</td>
                         <td class="text-center" id="lastrain7"></td>
                         <td class="text-center" id="nextrain7"></td>
                         <td class="text-center" id="timeuntil7"></td>
                     </tr>
-                    <tr id="row9">
+                    <tr id="row8">
                         <th scope="row" id="rail8">Great Western</th>
-                        <td class="text-center" id="route8">LON->LEIC</td>
-                        <td class="text-center" id="frequency8">50</td>
+                        <td class="text-center" id="route8">ATL->LOSA</td>
+                        <td class="text-center" id="frequency8">150</td>
                         <td class="text-center" id="lastrain8"></td>
                         <td class="text-center" id="nextrain8"></td>
                         <td class="text-center" id="timeuntil8"></td>
                     </tr>
-                    <tr id="row10">
+                    <tr id="row9">
                         <th scope="row" id="rail9">Great Western</th>
-                        <td class="text-center" id="route9">LON->EDIN</td>
+                        <td class="text-center" id="route9">ATL->SANF</td>
                         <td class="text-center" id="frequency9">240</td>
                         <td class="text-center" id="lastrain9"></td>
                         <td class="text-center" id="nextrain9"></td>
                         <td class="text-center" id="timeuntil9"></td>
                     </tr>
-                    <tr id="row11">
+                    <tr id="row10">
                         <th scope="row" id="rail10">Great Western</th>
-                        <td class="text-center" id="route10">LON->GLAS</td>
+                        <td class="text-center" id="route10">ATL->SEAT</td>
                         <td class="text-center" id="frequency10">200</td>
                         <td class="text-center" id="lastrain10"></td>
                         <td class="text-center" id="nextrain10"></td>
                         <td class="text-center" id="timeuntil10"></td>
                     </tr>
-                    <tr id="row12">
+                    <tr id="row11">
                         <th scope="row" id="rail11">Great Western</th>
-                        <td class="text-center" id="route11">LON->SUND</td>
+                        <td class="text-center" id="route11">ATL->PHOX</td>
                         <td class="text-center" id="frequency11">180</td>
                         <td class="text-center" id="lastrain11"></td>
                         <td class="text-center" id="nextrain11"></td>
                         <td class="text-center" id="timeuntil11"></td>
                     </tr>
-                    <tr id="row13">
+                    <tr id="row12">
                         <th scope="row" id="rail12">Great Western</th>
-                        <td class="text-center" id="route12">LON->BIRM</td>
+                        <td class="text-center" id="route12">ATL->LASV</td>
                         <td class="text-center" id="frequency12">35</td>
                         <td class="text-center" id="lastrain12"></td>
                         <td class="text-center" id="nextrain12"></td>
                         <td class="text-center" id="timeuntil12"></td>
                     </tr>
-                    <tr id="row14">
-                        <th scope="row" id="rail13">EuroRail</th>
-                        <td class="text-center" id="route13">LON->PARI</td>
+                    <tr id="row13">
+                        <th scope="row" id="rail13">RailCanada</th>
+                        <td class="text-center" id="route13">ATL->VANC</td>
                         <td class="text-center" id="frequency13">95</td>
                         <td class="text-center" id="lastrain13"></td>
                         <td class="text-center" id="nextrain13"></td>
                         <td class="text-center" id="timeuntil13"></td>
                     </tr>
+                </tbody>
+                </table>
+
+                <table id="inputable">
+                        <thead>
+                                <tr id="rowheader">
+                                  <th class="text-center" scope="col">Line:</th>
+                                  <th class="text-center" scope="col">Route:</th>
+                                  <th class="text-center" scope="col">Frequency: (min.)</th>
+                                  <th class="text-center" scope="col"></th>
+                                  <th class="text-center" scope="col"></th>
+                                  <th class="text-center" scope="col"></th>
+                                </tr>
+                              </thead>
+                    <tbody>
+
                     <tr id="rowadd">
                         <th scope="row" id="railadd">  
                             <div class="form-group pr-5 pl-5">
@@ -150,13 +166,13 @@
                         </th>
                         <td class="text-center" id="routeadd">
                         <div class="form-group pr-5 pl-5">
-                                <input type="text" class="form-control" id="newrail" placeholder="Choose a route">
+                                <input type="text" class="form-control" id="newroute" placeholder="Choose a route">
                             </div>
 
                         </td>
                         <td class="text-center" id="frequencyadd">
                                 <div class="form-group pr-5 pl-5">
-                                        <input type="text" class="form-control" id="newrail" placeholder="Frequency">
+                                        <input type="number" class="form-control" id="newfrequency" placeholder="Frequency">
                                     </div>
                         </td>
                         <td colspan="3" class="text-center" id="submitrain"><button>Submit</button></td>
@@ -171,27 +187,131 @@
 
 <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
 
+<script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+
+
 <script>
 
+    //Load Time on Page
+var now = moment().format('HH:mm:ss');
+
+
+
+
+$("#currentime").text(now);
+        // Initialize Firebase
+        var config = {
+    apiKey: "AIzaSyCV6MbQ6dOZBzyXH9qkPDhUuRSfi86J4Hs",
+    authDomain: "train-scheduler-12b09.firebaseapp.com",
+    databaseURL: "https://train-scheduler-12b09.firebaseio.com",
+    projectId: "train-scheduler-12b09",
+    storageBucket: "",
+    messagingSenderId: "287269634449"
+  };
+  firebase.initializeApp(config);
+
+        var database = firebase.database();
+
+        database.ref().on("child_added", function(instance) {
+            var childline = "";
+            var childroute = "";
+            var childfreq = 0;
+            var childlastdepart;
+            var childnextrain;
+            var childtimeuntil;
+            var instancemarker = instance.ref_.path.pieces_;
+
+            console.log("InstanceId = " + instancemarker);
+
+            childline = instance.val().NewTrain;
+            childroute = instance.val().NewRoute;
+            childfreq = instance.val().NewFreq;
+
+                    //TEST
+           var frequency = parseInt(childfreq);
+
+           console.log(frequency);
+
+            var firstTime = "12:00";
+            var firstTimeConverted = moment(firstTime, "HH:mm").subtract(1, "years");
+            var diffTime = moment().diff(moment(firstTimeConverted), "minutes");
+            var tRemainder = diffTime % frequency;
+            childlastdepart = moment().subtract(tRemainder, "minutes");
+            childtimeuntil = frequency - tRemainder;
+            childnextrain = moment().add(childtimeuntil, "minutes");
+
+            console.log("childlastrain = " + childlastdepart);          
+            console.log("childnextrain = " + childnextrain);
+
+        var newrow = `<tr id="row${instancemarker}"><th scope="row">${childline}</th><td id="newroute${instancemarker}">${childroute}</td><td id="newfreq${instancemarker}">${childfreq}</td><td id="newlast${instancemarker}">${childlastdepart}</td><td id="newnext${instancemarker}">${childnextrain}</td><td id="newuntil${instancemarker}">${childtimeuntil}</td></tr>`;
+
+            $("#traintable").append(newrow);
+
+
+            $("#newlast" + instancemarker).text(moment(childlastdepart).format("HH:mm")); 
+            $("#newuntil" + instancemarker).text(childtimeuntil + " min.");
+            $("#newnext" + instancemarker).text(moment(childnextrain).format("HH:mm")); 
+
+    if (10 < childtimeuntil < 60) {
+    ($("#row" + instancemarker).removeClass("table-warning table-danger table-success"));
+
+    }
+
+    if (childtimeuntil <= 10) {
+    ($("#row" + instancemarker).addClass("table-warning"));
+        
+    }
+
+    if (childtimeuntil <= 5) {
+    ($("#row" + instancemarker).removeClass("table-warning").addClass("table-danger"));
+
+    }
+
+
+
+
+    if (childtimeuntil >= 60) {
+    ($("#row" + instancemarker).addClass("table-success"));
+
+    }
+
+        });
+
+        $(document).ready(function() {
+
+
+    $("#submitrain").on("click", function() {
+        var addrail = $("#newrail").val();
+        var addroute = $("#newroute").val();
+        var addfrequency = $("#newfrequency").val();
+
+
+        database.ref().push({
+            NewTrain: addrail,
+            NewRoute: addroute,
+            NewFreq: addfrequency
+
+        });
+
+        $("#newrail").val("");
+        $("#newroute").val("");
+        $("#newfrequency").val("");
+
+
+    });
+
+      
 var traintable = ($("#trainbody"))
 
 console.log(traintable[0].childElementCount);
 
-//Load Time on Page
-var now = moment().format('LTS');
 
-var intervalId;
-
-
-
-var now = moment().format('LTS');
-$("#currentime").text(now);
 
 
 
 //Initially Populate Table
 
-for (i=0; i<(traintable[0].childElementCount - 1); i++) {
+for (i=0; i<(traintable[0].childElementCount); i++) {
     
     var frequency = parseInt($("#frequency" + i).html());
     console.log(parseInt($("#frequency" + i).html()));
@@ -207,24 +327,25 @@ for (i=0; i<(traintable[0].childElementCount - 1); i++) {
     var nextdepart = moment().add(timeuntil, "minutes");
     $("#nextrain" + i).text(moment(nextdepart).format("HH:mm")); 
     if (10 < timeuntil < 60) {
-        ($("#row" + (i + 1))).removeClass("table-warning table-danger table-success");
-
-    }
-
-    if (timeuntil <= 5) {
-    ($("#row" + (i + 1))).removeClass("table-warning").addClass("table-danger");
+        ($("#row" + (i))).removeClass("table-warning table-danger table-success");
 
     }
 
     if (timeuntil <= 10) {
-        ($("#row" + (i + 1))).removeClass("table-danger").addClass("table-warning");
+    ($("#row" + (i))).addClass("table-warning");
         
+    }
+
+    if (timeuntil <= 5) {
+    ($("#row" + (i))).removeClass("table-warning").addClass("table-danger");
+
     }
 
 
 
+
     if (timeuntil >= 60) {
-    ($("#row" + (i + 1))).addClass("table-success");
+    ($("#row" + (i))).addClass("table-success");
 
     }
 
@@ -233,13 +354,8 @@ for (i=0; i<(traintable[0].childElementCount - 1); i++) {
 
     //1 sec Current Time
     window.setInterval(function(gettime){
-    var now = moment().format('LTS');
 
-    var intervalId;
-
-    var frequency = 60;
-
-    var now = moment().format('LTS');
+    var now = moment().format('HH:mm:ss');
     $("#currentime").text(now);
 
     }, 1000);
@@ -275,7 +391,7 @@ for (i=0; i<(traintable[0].childElementCount - 1); i++) {
         // console.log("ARRIVAL TIME: " + moment(nextdepart).format("hh:mm"));
         // $("#nextrain0").text(moment(nextdepart).format("HH:mm")); 
 
-    for (i=0; (i<traintable[0].childElementCount - 1); i++) {
+    for (i=0; (i<13); i++) {
     
     var frequency = parseInt($("#frequency" + i).html());
 
@@ -292,22 +408,22 @@ for (i=0; i<(traintable[0].childElementCount - 1); i++) {
     $("#nextrain" + i).text(moment(nextdepart).format("HH:mm")); 
 
     if (10 < timeuntil < 60) {
-        ($("#row" + (i + 1))).removeClass("table-warning table-danger table-success");
+        ($("#row" + (i))).removeClass("table-warning table-danger table-success");
 
     }
 
     if (timeuntil <= 5) {
-    ($("#row" + (i + 1))).removeClass("table-warning").addClass("table-danger");
+    ($("#row" + (i))).removeClass("table-warning").addClass("table-danger");
 
     }
 
     if (timeuntil <= 10) {
-        ($("#row" + (i + 1))).addClass("table-warning");
+        ($("#row" + (i))).addClass("table-warning");
         
     }
 
     if (timeuntil >= 60) {
-    ($("#row" + (i + 1))).addClass("table-success");
+    ($("#row" + (i))).addClass("table-success");
 
     }
 
@@ -319,7 +435,7 @@ for (i=0; i<(traintable[0].childElementCount - 1); i++) {
 
 
 
-
+});
 
 </script>
 
